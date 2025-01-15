@@ -6,11 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.Collection;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import org.example.camunda.process.solution.jsonmodel.Organization;
@@ -155,6 +151,26 @@ public class OrganizationService {
 
   public Collection<User> allUsers() {
     return activeOrg.getUsers();
+  }
+
+  public Collection<User> getUsersByGroup(String group) {
+    ArrayList<User> users = new ArrayList<>();
+    for (User user : allUsers()) {
+      if (user.getGroups().contains(group)) {
+        users.add(user);
+      }
+    }
+    return users;
+  }
+
+  public Collection<User> getUsersByGroupAndSubGroup(String group, String subGroup) {
+    ArrayList<User> users = new ArrayList<>();
+    for (User user : allUsers()) {
+      if (user.getGroups().contains(group) && user.getGroups().contains(subGroup)) {
+        users.add(user);
+      }
+    }
+    return users;
   }
 
   public Organization activate(String orgName, boolean persist) throws IOException {

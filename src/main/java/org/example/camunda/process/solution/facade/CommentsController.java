@@ -62,6 +62,8 @@ public class CommentsController extends AbstractController {
             getAuthenticatedUsername(),
             "comment",
             comment.get("content"),
+            "isPublic",
+            comment.get("isPublic"),
             "date",
             LocalDateTime.now().toString().replace("T", " ").substring(0, 19)));
     if (comments != null) {

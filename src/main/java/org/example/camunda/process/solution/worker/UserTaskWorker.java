@@ -101,7 +101,7 @@ public class UserTaskWorker {
       LOG.error("Exception occured in UserTaskWorker", e);
       client
           .newFailCommand(job.getKey())
-          .retries(0)
+          .retries(2)
           .errorMessage("Exception occured in UserTaskWorker - " + e.getMessage())
           .send();
     }

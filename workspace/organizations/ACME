@@ -1,41 +1,129 @@
 {
   "name" : "ACME",
-  "modified" : 1731947359816,
+  "modified" : 1736765962019,
   "active" : true,
-  "cryptPassword" : true,
+  "cryptPassword" : false,
   "users" : [ {
-    "username" : "chris",
+    "username" : "bala-c2",
     "password" : {
-      "value" : "$2a$10$8PMTbJwYesPVofc1r6N8GuJ91ZoEhqX0Lvpk3v895YKCw1IJd073C",
-      "encrypted" : true
+      "value" : "demo",
+      "encrypted" : false
     },
-    "firstname" : "Christophe",
+    "firstname" : "Bala",
     "lastname" : "D",
     "email" : null,
     "profile" : "user",
-    "groups" : [ "Finance", "HR" ]
+    "groups" : [ "head", "c2" ]
+  }, {
+    "username" : "sarah-c2",
+    "password" : {
+      "value" : "demo",
+      "encrypted" : false
+    },
+    "firstname" : "Sarah",
+    "lastname" : "Doe",
+    "email" : null,
+    "profile" : "user",
+    "groups" : [ "finance", "c2" ]
+  }, {
+    "username" : "ali-c1",
+    "password" : {
+      "value" : "demo",
+      "encrypted" : false
+    },
+    "firstname" : "Ali",
+    "lastname" : "D",
+    "email" : null,
+    "profile" : "user",
+    "groups" : [ "head", "c1" ]
+  }, {
+    "username" : "msl",
+    "password" : {
+      "value" : "demo",
+      "encrypted" : false
+    },
+    "firstname" : "Marco",
+    "lastname" : "Doe",
+    "email" : null,
+    "profile" : "user",
+    "groups" : [ "financial", "validator", "admin" ]
+  }, {
+    "username" : "saad",
+    "password" : {
+      "value" : "demo",
+      "encrypted" : false
+    },
+    "firstname" : "Saad",
+    "lastname" : "Doe",
+    "email" : null,
+    "profile" : "user",
+    "groups" : [ "admin" ]
+  }, {
+    "username" : "venkat-c1",
+    "password" : {
+      "value" : "demo",
+      "encrypted" : false
+    },
+    "firstname" : "Venkat",
+    "lastname" : "M",
+    "email" : null,
+    "profile" : "user",
+    "groups" : [ "legal", "c1" ]
+  }, {
+    "username" : "john",
+    "password" : {
+      "value" : "demo",
+      "encrypted" : false
+    },
+    "firstname" : "John",
+    "lastname" : "Doe",
+    "email" : null,
+    "profile" : "user",
+    "groups" : [ "validator" ]
+  }, {
+    "username" : "ayasha-c1",
+    "password" : {
+      "value" : "demo",
+      "encrypted" : false
+    },
+    "firstname" : "Ayasha",
+    "lastname" : "Doe",
+    "email" : null,
+    "profile" : "user",
+    "groups" : [ "finance", "c1" ]
   }, {
     "username" : "demo",
     "password" : {
-      "value" : "$2a$10$Car0YwUe13mXBgCXQSdQ7OzcVQemactINCHZG6RtwV5hGNxmNbJbO",
-      "encrypted" : true
+      "value" : "demo",
+      "encrypted" : false
     },
     "firstname" : "De",
     "lastname" : "Mo",
     "email" : "christophe.dame@camunda.com",
     "profile" : "Admin",
-    "groups" : [ "HR", "IT" ]
+    "groups" : [ "head", "financial", "validator", "legal", "admin", "finance", "c1", "c2" ]
   }, {
-    "username" : "falko",
+    "username" : "nora",
     "password" : {
-      "value" : "$2a$10$LtmnJh1V6rBP.Ch6DplFt.xvle6.nrMWgh1LrPoljUrKSmXmskDFy",
-      "encrypted" : true
+      "value" : "demo",
+      "encrypted" : false
     },
-    "firstname" : "Falko",
+    "firstname" : "Nora",
+    "lastname" : "Doe",
+    "email" : null,
+    "profile" : "user",
+    "groups" : [ "financial" ]
+  }, {
+    "username" : "abdullah-c2",
+    "password" : {
+      "value" : "demo",
+      "encrypted" : false
+    },
+    "firstname" : "Abdullah",
     "lastname" : "M",
     "email" : null,
     "profile" : "user",
-    "groups" : [ "Sales" ]
+    "groups" : [ "legal", "c2" ]
   } ],
-  "groups" : [ "Sales", "Finance", "HR", "IT" ]
+  "groups" : [ "head", "financial", "validator", "legal", "admin", "finance", "c1", "c2" ]
 }

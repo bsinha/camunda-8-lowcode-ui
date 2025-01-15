@@ -35,7 +35,11 @@ public class SseEmitterManager {
   }
 
   public static void send(String userId, Task task) throws IOException {
-    getEmitter(userId).send(task);
+    try {
+      getEmitter(userId).send(task);
+    } catch (IOException e) {
+      // do nothing, for now
+    }
   }
 
   public static void broadcast(Task task) throws IOException {

@@ -5,14 +5,14 @@ camunda:
   client:
     mode: saas
     auth:
-      client-id: A8mGCU5wI4Y80EXRL_fTUXYn8ZY6eKbN
-      client-secret: 4Q5BSkrmsaOKgd77PciEyouJcaYXZjHoZzlBD0N4BHXs5tM2duBFiAea84AaYLjA
-    cluster-id: 3ced8e30-ec88-475c-906d-d607d4600424
-    region: sin-1
+      client-id: Nm0.qCSDTuyxdoz5XH0IJN9ukmVYQGdt
+      client-secret: f8cvfEz69owQJ03MNjQsHAZ1N86RP7yyV86NzJ5sis6syjIcYNKsL9SgbPt9ON7a
+    cluster-id: c9a499c4-6479-49f5-9314-ef617abb3286
+    region: bru-2
 
 # go to http://localhost:8084/applications/ and create application of type M2M with read/write access to Operate & Tasklist
-identity.clientId: gosi
-identity.clientSecret: 7uYMclFT41pjh8MP6BZv83NMK5yEA3zS
+identity.clientId: pouet
+identity.clientSecret: CSf4Jqwcmw6HsEocpslOvVPjZ4t8DUoP
 keycloakUrl: http://localhost:18080
 tasklistUrl: http://localhost:8082/
 operateUrl: http://localhost:8081/

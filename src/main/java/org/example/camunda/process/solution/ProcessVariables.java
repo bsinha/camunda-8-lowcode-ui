@@ -11,37 +11,19 @@ import org.apache.commons.lang3.builder.ToStringStyle;
 @JsonInclude(Include.NON_NULL)
 public class ProcessVariables {
 
-  private String intialMessage;
-  private String assignee1;
-  private String assignee2;
   private List<Map<String, String>> comments;
-  private Map<String, Object> file;
-  private String date;
+  private String registrationId;
+  private Double wage;
+  private boolean backdated;
+  private String assignee;
+  private String committee;
 
-  public String getIntialMessage() {
-    return intialMessage;
+  public String getCommittee() {
+    return committee;
   }
 
-  public void setIntialMessage(String intialMessage) {
-    this.intialMessage = intialMessage;
-  }
-
-  public String getAssignee1() {
-    return assignee1;
-  }
-
-  public ProcessVariables setAssignee1(String assignee1) {
-    this.assignee1 = assignee1;
-    return this;
-  }
-
-  public String getAssignee2() {
-    return assignee2;
-  }
-
-  public ProcessVariables setAssignee2(String assignee2) {
-    this.assignee2 = assignee2;
-    return this;
+  public void setCommittee(String committee) {
+    this.committee = committee;
   }
 
   public List<Map<String, String>> getComments() {
@@ -53,22 +35,36 @@ public class ProcessVariables {
     return this;
   }
 
-  public Map<String, Object> getFile() {
-    return file;
+  public String getRegistrationId() {
+    return registrationId;
   }
 
-  public ProcessVariables setFile(Map<String, Object> file) {
-    this.file = file;
-    return this;
+  public void setRegistrationId(String registrationId) {
+    this.registrationId = registrationId;
   }
 
-  public String getDate() {
-    return date;
+  public Double getWage() {
+    return wage;
   }
 
-  public ProcessVariables setDate(String date) {
-    this.date = date;
-    return this;
+  public void setWage(Double wage) {
+    this.wage = wage;
+  }
+
+  public boolean isBackdated() {
+    return backdated;
+  }
+
+  public void setBackdated(boolean backdated) {
+    this.backdated = backdated;
+  }
+
+  public String getAssignee() {
+    return assignee;
+  }
+
+  public void setAssignee(String assignee) {
+    this.assignee = assignee;
   }
 
   @Override

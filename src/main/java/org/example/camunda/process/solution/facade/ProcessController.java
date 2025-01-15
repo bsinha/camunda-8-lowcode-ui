@@ -52,7 +52,7 @@ public class ProcessController extends AbstractController {
         .send();
   }
 
-  @IsAuthenticated
+  // @IsAuthenticated
   @PostMapping("/message/{messageName}/{correlationKey}")
   public void publishMessage(
       @PathVariable String messageName,

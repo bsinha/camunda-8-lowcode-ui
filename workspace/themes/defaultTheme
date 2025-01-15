@@ -1,9 +1,9 @@
 {
   "name" : "defaultTheme",
-  "logo" : "camunda.svg",
+  "logo" : "logo.svg",
   "logoCss" : "height:50px; width:150px;",
-  "background" : "background.jfif",
-  "modified" : 1722846042187,
+  "background" : "background.jpg",
+  "modified" : 1736479878140,
   "variables" : {
     "warning" : "#ffc107",
     "info" : "#0dcaf0",
