@@ -1,8 +1,4 @@
-[![Community Extension](https://img.shields.io/badge/Community%20Extension-An%20open%20source%20community%20maintained%20project-FF4700)](https://github.com/camunda-community-hub/community)
-![Compatible with: Camunda Platform 8](https://img.shields.io/badge/Compatible%20with-Camunda%20Platform%208-0072Ce)
-[![](https://img.shields.io/badge/Lifecycle-Incubating-blue)](https://github.com/Camunda-Community-Hub/community/blob/main/extension-lifecycle.md#incubating-)
-
-# Low-code Solution Template for Camunda Platform 8 using React, Java and Spring Boot
+# GOSI: Low-code Solution Template for Camunda Platform 8 using React, Java and Spring Boot 
 
 We've had some customers who would like to offer some "citizen dev tools" to their business users :
 - build Forms using drag'n drop tools like [form-js](https://bpmn.io/toolkit/form-js/) but with more components.
@@ -16,7 +12,7 @@ The goal of this project is to show how to build such a solution with [React](ht
 ## Repository content
 
 This repository contains a Java application template for Camunda Platform 8 using Spring Boot
-and a [docker-compose.yaml](docker-compose.yaml) file for local development. For production setups we recommend to use our [helm charts](https://docs.camunda.io/docs/self-managed/platform-deployment/kubernetes-helm/).
+and a [docker-compose.yaml](docker-compose.yaml) file for local development. For production setups we recommend to use our [helm charts](https://docs.camunda.io/docs/self-managed/setup/install/#what-is-helm).
 
 - [Documentation](https://docs.camunda.io)
 - [Camunda Platform SaaS](https://camunda.io)
