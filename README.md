@@ -1,8 +1,6 @@
-# GOSI: Low-code Solution Template for Camunda Platform 8 using React, Java and Spring Boot 
+# GOSI
+## Low-code Solution Template for Camunda Platform 8 using React, Java and Spring Boot 
 
-We've had some customers who would like to offer some "citizen dev tools" to their business users :
-- build Forms using drag'n drop tools like [form-js](https://bpmn.io/toolkit/form-js/) but with more components.
-- build/adapt mail templates
 
 The goal of this project is to show how to build such a solution with [React](https://reactjs.org/), an [extended form-js](https://github.com/camunda-community-hub/extended-form-js), [Spring-Boot](https://spring.io/projects/spring-boot), [spring-zeebe](https://github.com/camunda-community-hub/spring-zeebe), [tasklist-client](https://github.com/camunda-community-hub/camunda-tasklist-client-java) and [operate-client](https://github.com/camunda-community-hub/camunda-operate-client-java)
 
@@ -303,33 +301,3 @@ RESOURCE_AUTHORIZATIONS_ENABLED=true docker compose up -d
 or by modifying the default value in the [`.env`](.env) file.
 
 Read more about resource based authorizations in the [documentation](https://docs.camunda.io/docs/self-managed/concepts/access-control/resource-authorizations/).
-
-
-## Camunda Platform 7
-
-Looking for information on Camunda Platform 7? Check out the links below:
-
-- [Documentation](https://docs.camunda.org/)
-- [GitHub](https://github.com/camunda/camunda-bpm-platform)
-
-
-## Pull from Upstream (for maintainers of the Low-Code UI Template)
-
-Pull in the latest updates from the [Process Solution Template](https://github.com/camunda-community-hub/camunda-8-process-solution-template),
-which this template was forked from, using:
-
-```sh
-git remote add upstream git@github.com:camunda-community-hub/camunda-8-process-solution-template.git
-git checkout -b pull-upstream
-git pull upstream main --no-rebase
-git mergetool
-git commit # to conclude merge
-git push --set-upstream origin pull-upstream
-gh pr create --title "Update from Process Solution Template" --body "Pulls in the latest updates from the [Process Solution Template](https://github.com/camunda-community-hub/camunda-8-process-solution-template) which this template was forked from"
-```
-
-Pulling another change into the same PR:
-```sh
-git pull upstream main --no-rebase
-git push
-```
